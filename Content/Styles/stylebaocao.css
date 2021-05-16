@@ -1,0 +1,138 @@
+﻿
+/*Báo cáo*/
+.smfrmbaocao .zone_search {
+    border-bottom: 2px solid #0094ff;
+}
+
+.zonehead {
+    text-align: center;
+    margin: 5px;
+    clear: both;
+}
+
+.zonehead p {
+    margin: 0;
+    text-align: center;
+}
+.pull-right {
+    float: right;
+}
+table.smtable, .smtable th, .smtable td {
+    border: 1px solid #96d1f3;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 13px;
+}
+
+    table.smtable th.text-left, table.smtable td.text-left {
+        text-align: left;
+    }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.smtable {
+    width: 100%;
+}
+
+    .smtable table tr th {
+        vertical-align: central;
+        text-align: center;
+    }
+
+    .smtable .clstong td {
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .smtable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+td.onerow, th.onerow {
+    width: 70px;
+}
+
+td.clstt, th.clstt {
+    width: 50px;
+}
+
+.smfrmbaocao .input-datetime {
+    width: 110px;
+}
+/*End báo cáo*/
+.si-group-cell{
+    width:10px;
+}
+.clsContent .si-group-tr p{
+    margin:5px !important;
+}
+.label-donvi {
+    float: left;
+    margin-left: 20px;
+}
+
+.label-conghoa {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.label-tudo {
+    text-align: right;
+    margin-right: 80px;
+}
+
+.label-ky {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.label-ghicu {
+    text-align: right;
+    font-style: italic;
+    margin-right: 20px;
+}
+.smtable thead, .smtable tbody tr {
+    cursor:pointer;
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* even columns width , fix width of table too*/
+}
+.smtable td, .smtable th {
+   overflow:hidden /* even columns width , fix width of table too*/
+}
+/*.mainContentBaoCao .smtable {
+    border: none;
+}*/
+
+
+.smtable thead th {
+    font-weight: bold;
+}
+
+/*.smtable thead {
+        width: calc( 100% - 17px ) 
+    }*/
+.smtable tbody {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.linkview {
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+.smtable tbody tr.trhiden {
+    display: none;
+}
+#stPrint strong, #nPrint strong {
+    font-weight: bold;
+}
+#stPrint i, #stPrint cite, #stPrint em, #stPrint var, #stPrint address, #stPrint dfn, #nPrint i, #nPrint cite, #nPrint em, #nPrint var, #nPrint address, #nPrint dfn {
+    font-style: italic;
+}

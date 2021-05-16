@@ -1,0 +1,32 @@
+sudo: required
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+language: node_js
+node_js:
+  - "6"
+cache:
+  - node_modules
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+install:
+  - npm install mgit2 lerna
+  - mgit bootstrap --resolver-url-template="https://github.com/\${ path }.git"
+  - lerna bootstrap
+script:
+  - npm t -- --reporter=dots
+  - npm run docs:api -- --validate-only
+after_success:
+  - travis_wait npm run docs:build-and-publish-nightly
+notifications:
+  slack:
+    rooms:
+      - secure: NKUpSnmkmlRRua0URoQJjEqNfIHx6tuqJhVCbQ6vU5rdUdw6A43OfG7Qym3MRQlXymFuIF0MUsOrS6t0GeXE9hSpC+5ynF02E5wdTD1/R7Tjq0XEdx0mXJTYjuOQA16fvwMxm5p3Ub5uWpSH+gBtyG86UPCbVSxDvvmxHqResAw=
+    on_success: change
+    on_failure: always
+    on_pull_requests: false

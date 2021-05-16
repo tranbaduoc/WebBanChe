@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["d6Svb3k"]); }
+
+__d("nullIntersectionObserverEntryLogger",["FBLogger","Random"],(function(a,b,c,d,e,f){"use strict";e.exports=a;function a(a,c){a==null&&b("Random").coinflip(100)&&b("FBLogger")("comet_infra").warn(c)}}),null);

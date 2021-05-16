@@ -1,0 +1,113 @@
+.clearfix {
+  clear: both;
+}
+#dv-act-btn {
+  float: right;
+  margin-right: 20px;
+}
+.ico-approved {
+    background-image: url("/Content/images/approved.gif");
+}
+
+.ico-edit {
+    background-image: url("/Content/images/edit.gif");
+}
+
+.ico-delete {
+    background-image: url("/Content/images/delete.gif");
+}
+
+.ico-permission {
+    background-image: url("/Content/images/permission.png");
+}
+.ico-add {
+    background-image: url("/Content/images/general.gif");
+}
+.ico-delete, .ico-edit, .ico-approved, .ico-permission, .ico-add {
+    background-size: 16px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.act-area {
+    display: inline-block;
+}
+
+#mainPage #ms-designer-ribbon {
+    display: none !important;
+}
+
+.tab-act {
+    text-align: right;
+    margin: 5px 0 10px 0;
+    display: block;
+    overflow: hidden;
+}
+
+.td-act {
+    min-width: 120px;
+}
+
+table .chkChoose {
+    vertical-align: top;
+}
+
+.tab-act > .tab-act-button {
+    float: right;
+    margin-right: 10px;
+}
+
+.cl-rows {
+    display: block;
+    margin: 5px;
+    padding: 2px;
+}
+
+.cl-colm, .cl-lable, .cl-ctlinput {
+    display: inline-block;
+}
+
+.cl-bold {
+    font-weight: bold;
+}
+
+#ls-groups {
+    height: 100px;
+    overflow: auto;
+}
+
+#qt-add-group #category-list {
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+.cl-chktitle span {
+    line-height: 1em;
+    padding-left: 5px;
+    vertical-align: bottom;
+}
+.loadingoverlay
+{
+    z-index: 99999 !important;
+}
+#dlg-message {
+  max-width: 450px;
+  min-width: 200px;
+  max-height: 300px;
+  bottom: 30px;
+  left: 30px;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+.error {
+  color: #ff0000;
+  font-style: italic;
+  font-weight: normal;
+  text-align: justify;
+}
+button.close {
+  min-width: 10px !important;
+}

@@ -1,0 +1,160 @@
+{
+	"name": "CKEditor 5",
+	"slug": "ckeditor5",
+	"hexo-config": "docs/hexo-custom-config.json",
+	"extraStyles": "assets/styles.css",
+	"path": "docs",
+	"observablesdocs": "module:utils/observablemixin~ObservableMixin",
+	"scripts": {
+		"snippet-adapter": "../scripts/docs/snippetadapter",
+		"import-path": "../scripts/docs/getrealimportpath"
+	},
+	"docsearch": {
+		"apiKey": "fc463c26455365ad403d5ec51796cd73",
+		"indexName": "ckeditor_nightly",
+		"customRanking": [
+			{
+				"url": "api/module_core_editor_editorconfig-EditorConfig.html",
+				"rank": 65
+			},
+			{
+				"url": "api/module_heading_heading-HeadingConfig.html",
+				"rank": 30
+			},
+			{
+				"url": "api/module_image_image-ImageConfig.html",
+				"rank": 30
+			},
+			{
+				"url": "api/module_editor-classic_classiceditor-ClassicEditor.html",
+				"rank": 30
+			},
+			{
+				"url": "api/module_editor-balloon_ballooneditor-BalloonEditor.html",
+				"rank": 30
+			},
+			{
+				"url": "api/module_editor-inline_inlineeditor-InlineEditor.html",
+				"rank": 30
+			}
+		]
+	},
+	"googleanalytics": {
+		"domains": [ "ckeditor5.github.io" ],
+		"config": {
+			"trackingId": "UA-271067-19",
+			"cookieDomain": "ckeditor5.github.io"
+		}
+	},
+  	"og": {
+	   	"description": "Learn how to install, integrate and configure CKEditor 5 Builds and how to work with CKEditor 5 Framework, customize it, create your own plugins and custom editors, change the UI or even bring your own UI to the editor. API reference and examples included."
+	},
+	"groups": [
+		{
+			"name": "Builds",
+			"id": "builds",
+			"slug": "builds",
+			"categories": [
+				{
+					"name": "Guides",
+					"id": "builds-guides",
+					"slug": "guides",
+					"categories": [
+						{
+							"name": "Integration",
+							"id": "builds-integration",
+							"slug": "integration",
+							"order": 100
+						},
+						{
+							"name": "Development",
+							"id": "builds-development",
+							"slug": "development",
+							"order": 200
+						},
+						{
+							"name": "Support",
+							"id": "builds-support",
+							"slug": "support",
+							"order": 300
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Framework",
+			"id": "framework",
+			"slug": "framework",
+			"categories": [
+				{
+					"name": "Guides",
+					"id": "framework-guides",
+					"slug": "guides",
+					"categories": [
+						{
+							"name": "Architecture",
+							"id": "framework-architecture",
+							"slug": "architecture",
+							"order": 100
+						},
+						{
+							"name": "User interface",
+							"id": "framework-ui",
+							"slug": "ui",
+							"order": 200
+						},
+						{
+							"name": "Contributing",
+							"id": "framework-contributing",
+							"slug": "contributing",
+							"order": 300
+						},
+						{
+							"name": "Support",
+							"id": "framework-support",
+							"slug": "support",
+							"order": 400
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Examples",
+			"id": "examples",
+			"slug": "examples",
+			"categories": [
+				{
+					"name": "Builds",
+					"id": "examples-builds",
+					"slug": "builds"
+				},
+				{
+					"name": "Framework",
+					"id": "examples-framework",
+					"slug": "framework"
+				}
+			]
+		},
+		{
+			"name": "Features",
+			"id": "features",
+			"slug": "features",
+			"categories": [
+				{
+					"name": "Collaboration",
+					"id": "features-collaboration",
+					"slug": "collaboration"
+				}
+			]
+		},
+		{
+			"name": "API",
+			"id": "api-reference",
+			"sourceDir": "api",
+			"slug": "api",
+			"type": "jsdoc"
+		}
+	]
+}
